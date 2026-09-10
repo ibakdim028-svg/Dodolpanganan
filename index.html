@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Manis & Gurih</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff8ef;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b4513, #d2691e);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .judul {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .judul h2 {
+            color: #8b4513;
+            font-size: 30px;
+        }
+
+        .produk {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .gambar {
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            background: #ffe6c7;
+        }
+
+        .isi {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .isi h3 {
+            color: #8b4513;
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+
+        .isi p {
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .harga {
+            font-size: 21px;
+            font-weight: bold;
+            color: #d2691e;
+            margin-bottom: 15px;
+        }
+
+        .pesan {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .pesan:hover {
+            background: #128c7e;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍴 Kedai Lezat</h1>
+        <p>Martabak, Durian & Mochi Favoritmu!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="judul">
+            <h2>Menu Kami</h2>
+            <p>Pilih makanan favoritmu dan pesan melalui WhatsApp</p>
+        </div>
+
+        <div class="produk">
+
+            <!-- MARTABAK -->
+            <div class="card">
+                <div class="gambar">🥞</div>
+
+                <div class="isi">
+                    <h3>Martabak Asin</h3>
+                    <p>Martabak asin gurih dengan isian telur, daging, dan sayuran.</p>
+
+                    <div class="harga">Rp 50.000</div>
+
+                    <a
+                        class="pesan"
+                        href="https://wa.me/628xxxxxxxxxx?text=Halo%20Kedai%20Lezat,%20saya%20mau%20pesan%20Martabak%20Asin%20seharga%20Rp%2025.000"
+                        target="_blank">
+                        📱 Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- DURIAN -->
+            <div class="card">
+                <div class="gambar">🥭</div>
+
+                <div class="isi">
+                    <h3>Buah Durian</h3>
+                    <p>Durian segar dan legit dengan aroma khas yang menggoda.</p>
+
+                    <div class="harga">Rp 100.000</div>
+
+                    <a
+                        class="pesan"
+                        href="https://wa.me/628xxxxxxxxxx?text=Halo%20Kedai%20Lezat,%20saya%20mau%20pesan%20Buah%20Durian%20seharga%20Rp%2050.000"
+                        target="_blank">
+                        📱 Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- MOCHI -->
+            <div class="card">
+                <div class="gambar">🍡</div>
+
+                <div class="isi">
+                    <h3>Mochi</h3>
+                    <p>Mochi lembut dengan berbagai pilihan rasa yang enak.</p>
+
+                    <div class="harga">Rp 15.000</div>
+
+                    <a
+                        class="pesan"
+                        href="https://wa.me/628xxxxxxxxxx?text=Halo%20Kedai%20Lezat,%20saya%20mau%20pesan%20Mochi%20seharga%20Rp%2015.000"
+                        target="_blank">
+                        📱 Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Irfan Kiut | makanan di buat sepenih hati  ❤️</p>
+    </footer>
+
+</body>
+</html>
